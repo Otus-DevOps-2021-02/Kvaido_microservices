@@ -1,6 +1,17 @@
 # Kvaido_microservices
 Kvaido microservices repository
 ------------------------
+## Homework#16
+
+1. Был установлен Prometheus.
+
+2. Был сконфигурован prometheus.yml для мониторинга микросервисов.
+
+3. Был доработан docker-compose.yml для совместного запуска Prometheus с микросервисами.
+
+4. Был добавлен Node exporter для сбора информации о работе Docker хоста.
+
+------------------------
 ## Homework#15
 1. Была создана ВМ на Yandex.Cloud с необходимыми параметрами.
 
