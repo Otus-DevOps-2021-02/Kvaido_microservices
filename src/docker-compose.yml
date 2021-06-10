@@ -1,0 +1,41 @@
+version: '3.3'
+
+services:
+  post_db:
+    env_file: .env
+    image: mongo:${VERSION_MONGO}
+    volumes:
+      - post_db:/data/db
+    networks:
+      back_net:
+
+  ui:
+    env_file: .env
+    build: ./ui
+    image: ${USERNAME}/ui:${UI_VERSION}
+    ports:
+      - ${UI_PORT}:9292/tcp
+    networks:
+      - front_net
+      - back_net
+
+  post:
+    env_file: .env
+    build: ./post-py
+    image: ${USERNAME}/post:${POST_VERSION}
+    networks:
+      - back_net
+
+  comment:
+    env_file: .env
+    build: ./comment
+    image: ${USERNAME}/comment:${COMMENT_VERSION}
+    networks:
+      - back_net
+
+volumes:
+  post_db:
+
+networks:
+  front_net:
+  back_net:

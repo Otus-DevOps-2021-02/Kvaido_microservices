@@ -1,4 +1,4 @@
-/packer/variables.json
+/docker-monolith/infra/packer/variables.json
 *.tfstate
 *.tfstate.*.backup
 *.tfstate.backup
@@ -15,3 +15,4 @@ jdauphant.nginx
 .molecule
 .cache
 .pytest_cache
+.env
