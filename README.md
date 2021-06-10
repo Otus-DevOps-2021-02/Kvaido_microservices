@@ -1,6 +1,19 @@
 # Kvaido_microservices
 Kvaido microservices repository
 ------------------------
+## Homework#15
+1. Была создана ВМ на Yandex.Cloud с необходимыми параметрами.
+
+2. Был создан docker-compose
+
+3. Были созданы каталоги /srv/gitlab/config, /srv/gitlab/data, /srv/gitlab/logs и
+   прописаны в docker-compose.
+
+4. Был настроен Gitlab CI и создан pipeline.
+
+5. В процессе изучения Gitlab CI был доработан и расщирен pipeline.
+
+------------------------
 ## Homework#14
 
 1. Были изучены сети docker: none, host, bridge.
