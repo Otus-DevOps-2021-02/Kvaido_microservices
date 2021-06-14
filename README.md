@@ -1,6 +1,17 @@
 # Kvaido_microservices
 Kvaido microservices repository
 ------------------------
+## Homework#14
+
+1. Были изучены сети docker: none, host, bridge.
+
+2. Былз создан и описан docker-compose.
+
+3. Был создан env файл.
+
+4. Был создан docker-compose.override.yml и запускает команду puma с параметрами  --debug -w 2
+
+------------------------
 ## Homework#13
 
 1. Был установлен linter - hadolint.
