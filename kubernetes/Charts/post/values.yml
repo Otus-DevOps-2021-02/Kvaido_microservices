@@ -1,0 +1,14 @@
+---
+service:
+  internalPort: 5000
+  externalPort: 5000
+
+image:
+  repository: kvaido/post
+  tag: 2.0:
+
+databaseHost:
+postHost:
+postPort:
+commentHost:
+commentPort:
